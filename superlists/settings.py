@@ -137,26 +137,26 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 
-LOGGING = {
-    'version': 1,
-    'disable_exisiting_loggers': False,
-    'handlers': {
-        'console': {
-            'level': 'DEBUG',
-            'class': 'logging.StreamHandler',
-        },
-    },
-    'loggers': {
-        'django': {
-            'handlers': ['console'],
-        },
-    },
-    'root': {'level': 'INFO'}
-}
+# LOGGING = {
+#     'version': 1,
+#     'disable_exisiting_loggers': False,
+#     'handlers': {
+#         'console': {
+#             'level': 'DEBUG',
+#             'class': 'logging.StreamHandler',
+#         },
+#     },
+#     'loggers': {
+#         'django': {
+#             'handlers': ['console'],
+#         },
+#     },
+#     'root': {'level': 'INFO'}
+# }
 
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'wildtestbeaver@gmail.com'
-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASSWORD')
+EMAIL_HOST_PASSWORD = '1sekrecik'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
